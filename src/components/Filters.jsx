@@ -5,7 +5,7 @@ const Filters = () => {
   return (
     <section className="container-fluid mt-4">
       <div className="d-flex container-fluid align-items-center">
-        <h2 className="text-white px-0 section-title me-2">Tv Shows</h2>
+        <h2 className="text-white shows px-0 section-title me-3">Tv Shows</h2>
         <Dropdown>
           <Dropdown.Toggle variant="secondary" className="bg-dark">
             Genres
