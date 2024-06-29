@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Button, DropdownButton, Dropdown } from 'react-bootstrap';
+import { Container, Row, Col, Button,  Dropdown } from 'react-bootstrap';
 import './EditProfile.css';
 
 const EditProfile = () => {
@@ -39,16 +39,16 @@ const EditProfile = () => {
               Strive Student
             </Button>
             <h3 className="lead">Language:</h3>
-            <DropdownButton
-              variant="dark"
-              title="English"
-              id="dropdown-menu-dark"
-              className="mb-3"
-            >
-              <Dropdown.Item href="#n">Italian</Dropdown.Item>
-              <Dropdown.Item href="#n">Russian</Dropdown.Item>
-              <Dropdown.Item href="#n">Spanish</Dropdown.Item>
-            </DropdownButton>
+            <Dropdown>
+          <Dropdown.Toggle variant="secondary" className="bg-dark">
+            English
+          </Dropdown.Toggle>
+          <Dropdown.Menu variant="dark">
+            <Dropdown.Item href="#">Russian</Dropdown.Item>
+            <Dropdown.Item href="#">Italian</Dropdown.Item>
+            <Dropdown.Item href="#">Spanish</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
             <hr />
             <div className="form-group">
               <p className="lead">Maturity Settings:</p>
@@ -98,7 +98,7 @@ const EditProfile = () => {
               <Button variant="outline-secondary" className="border border-secondary rounded-0">
                 CANCEL
               </Button>
-              <Button variant="outline-secondary" className="border border-secondary rounded-0 ms-3">
+              <Button variant="outline-secondary" className="border border-secondary  rounded-0 ms-3">
                 DELETE PROFILE
               </Button>
             </div>
