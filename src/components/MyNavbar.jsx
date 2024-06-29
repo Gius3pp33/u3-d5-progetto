@@ -26,13 +26,13 @@ function MyNavbar({ setPage }) {
               <Nav.Link href="#">Recently Added</Nav.Link>
               <Nav.Link href="#">My List</Nav.Link>
             </Nav>
-            <Form className="d-flex ms-auto">
+            <Form className="d-flex ms-auto  ">
               <Button variant="link" className="text-white" aria-label="Search">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   fill="grey"
-                  className="bi bi-search mb-1"
+                  className="bi bi-search mb-1 me-2"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -48,7 +48,7 @@ function MyNavbar({ setPage }) {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   fill="currentColor"
-                  className="bi bi-bell-fill"
+                  className="bi bi-bell-fill "
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -62,7 +62,7 @@ function MyNavbar({ setPage }) {
                 }
                 id="collasible-nav-dropdown"
                 menuVariant="dark"
-                className="custom-dropdown"
+                className="custom-dropdown me-2"
                 drop="start"
               >
                 <NavDropdown.Item href="#" onClick={() => { setPage('edit-profile'); setIsEditing(true); }}>Edit</NavDropdown.Item>
